@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "asbuilt-hybrid"
+version = "0.1.0"
+description = "Hybrid pipeline scaffolding for ML-driven as-built BIM reconstruction"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "asbuilt_hybrid" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+open3d = "0.18.*"
+numpy = "^1.26"
+scipy = "^1.11"
+scikit-learn = "^1.3"
+pandas = "^2.1"
+tqdm = "^4.66"
+ifcopenshell = "^0.7"
+torch = "^2.1"
+click = "^8.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+
+[build-system]
+requires = ["poetry-core>=1.6.0"]
+build-backend = "poetry.core.masonry.api"
